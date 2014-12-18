@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRazor", "SimpleRazor\SimpleRazor.csproj", "{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRazor.Demo", "SimpleRazor.Demo\SimpleRazor.Demo.csproj", "{EB193E57-FC83-437B-A748-953158D19236}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E} = {6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Release-Net40|Any CPU = Release-Net40|Any CPU
+		Release-Net45|Any CPU = Release-Net45|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}.Release|Any CPU.ActiveCfg = Release-Net45|Any CPU
+		{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}.Release|Any CPU.Build.0 = Release-Net45|Any CPU
+		{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}.Release-Net40|Any CPU.ActiveCfg = Release-Net40|Any CPU
+		{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}.Release-Net40|Any CPU.Build.0 = Release-Net40|Any CPU
+		{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}.Release-Net45|Any CPU.ActiveCfg = Release-Net45|Any CPU
+		{6A8C8A8E-9F21-4A01-9CB2-1A5819F46F8E}.Release-Net45|Any CPU.Build.0 = Release-Net45|Any CPU
+		{EB193E57-FC83-437B-A748-953158D19236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB193E57-FC83-437B-A748-953158D19236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB193E57-FC83-437B-A748-953158D19236}.Release|Any CPU.ActiveCfg = Release-Net45|Any CPU
+		{EB193E57-FC83-437B-A748-953158D19236}.Release|Any CPU.Build.0 = Release-Net45|Any CPU
+		{EB193E57-FC83-437B-A748-953158D19236}.Release-Net40|Any CPU.ActiveCfg = Release-Net40|Any CPU
+		{EB193E57-FC83-437B-A748-953158D19236}.Release-Net45|Any CPU.ActiveCfg = Release-Net45|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
