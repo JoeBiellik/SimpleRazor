@@ -61,9 +61,9 @@ namespace SimpleRazor
             var referencedAssemblies = new List<string>
             {
                 Assembly.GetExecutingAssembly().Location,
-                "System.dll",
-                "System.Core.dll",
-                "Microsoft.CSharp.dll"
+                // Hack: Ensure System.Linq and Microsoft.CSharp are loaded
+                typeof (System.Linq.Enumerable).Assembly.Location,
+                typeof (Microsoft.CSharp.RuntimeBinder.RuntimeBinderException).Assembly.Location
             };
             referencedAssemblies.AddRange(GetReferencedAssemblies<T>());
 
@@ -98,11 +98,11 @@ namespace SimpleRazor
         private static IEnumerable<string> GetReferencedAssemblies<T>()
         {
             var declaringAssembly = typeof (T).Assembly;
-            yield return Path.GetFileName(declaringAssembly.Location);
+            yield return declaringAssembly.Location;
 
             foreach (var assemblyName in declaringAssembly.GetReferencedAssemblies())
             {
-                yield return Path.GetFileName(Assembly.ReflectionOnlyLoad(assemblyName.FullName).Location);
+                yield return Assembly.ReflectionOnlyLoad(assemblyName.FullName).Location;
             }
         }
     }
