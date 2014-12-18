@@ -1,8 +1,8 @@
 SimpleRazor
 ===========
-[![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![NuGet version](https://img.shields.io/nuget/v/SimpleRazor.svg?label=nuget%20version&style=flat-square)](https://www.nuget.org/packages/SimpleRazor)
-[![NuGet downloads](https://img.shields.io/nuget/dt/SimpleRazor.svg?label=nuget%20downloads&style=flat-square)](https://www.nuget.org/stats/packages/SimpleRazor?groupby=Version)
+[![License](http://img.shields.io/badge/license-MIT-red.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![NuGet version](https://img.shields.io/nuget/v/SimpleRazor.svg?label=version&style=flat-square)](https://www.nuget.org/packages/SimpleRazor)
+[![NuGet downloads](https://img.shields.io/nuget/dt/SimpleRazor.svg?label=downloads&style=flat-square)](https://www.nuget.org/stats/packages/SimpleRazor?groupby=Version)
 [![CI Build Status](https://www.myget.org/BuildSource/Badge/joebiellik?identifier=edeba8ce-7e39-4b43-afef-02c6015486bb)](https://www.myget.org/gallery/joebiellik)
 
 Simple Razor template rendering engine built on top of Microsoft's Razor template system and based on [RazorEngine](https://github.com/Antaris/RazorEngine) but designed to be very simple and lightweight with minimal dependencies.
@@ -26,6 +26,7 @@ For more examples see the demo application project.
 using SimpleRazor;
 
 var template = "@Model.Name says @Model.Message!";
+
 var model = new {
 	Name = "Joe",
 	Message = "Hello World"
