@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>$id$</id>
+		<version>$version$</version>
+		<title>$title$</title>
+		<authors>$author$</authors>
+		<owners>$author$</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<summary>$description$</summary>
+		<description>$description$</description>
+		<releaseNotes>Initial release.</releaseNotes>
+		<copyright>Copyright $author$ 2014</copyright>
+		<tags>razor template</tags>
+		<dependencies>
+			<group targetFramework="net40">
+				<dependency id="Microsoft.AspNet.Razor" />
+			</group>
+			<group targetFramework="net45">
+				<dependency id="Microsoft.AspNet.Razor" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+        <file src="\bin\Release-Net40\$id$.dll" target="lib\net40\" />
+		<file src="\bin\Release-Net40\$id$.xml" target="lib\net40\" />
+        <file src="\bin\Release-Net45\$id$.dll" target="lib\net45\" />
+		<file src="\bin\Release-Net45\$id$.xml" target="lib\net45\" />
+    </files>
+</package>
