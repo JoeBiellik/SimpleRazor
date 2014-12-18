@@ -5,10 +5,10 @@
 		<title>SimpleRazor</title>
 		<version>0.0.0.0</version>
 		<authors>Joe Biellik</authors>
-		<summary>Simple Razor template engine</summary>
-		<description>Simple Razor template engine</description>
+		<summary>Simple Razor template rendering engine</summary>
+		<description>Simple Razor template rendering engine designed to be very simple and lightweight with minimal dependencies. Ideal for non-MVC environments where you just want to render a Razor template without any fuss.</description>
 		<tags>razor template</tags>
-		<licenseUrl>http://www.opensource.org/licenses/MIT</licenseUrl>
+		<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
 		<projectUrl>https://github.com/JoeBiellik/SimpleRazor</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<dependencies>
