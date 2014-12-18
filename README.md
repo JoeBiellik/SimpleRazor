@@ -5,7 +5,9 @@ SimpleRazor
 [![NuGet downloads](https://img.shields.io/nuget/dt/SimpleRazor.svg?label=nuget%20downloads&style=flat-square)](https://www.nuget.org/stats/packages/SimpleRazor?groupby=Version)
 [![CI Build Status](https://www.myget.org/BuildSource/Badge/joebiellik?identifier=edeba8ce-7e39-4b43-afef-02c6015486bb)](https://www.myget.org/gallery/joebiellik)
 
-Simple Razor template rendering engine built on top of Microsoft's Razor template system and based on [RazorEngine](https://github.com/Antaris/RazorEngine) but designed to be very simple and lightweight with minimal dependencies. Ideal for non-MVC environments where you just want to render a Razor template without any fuss.
+Simple Razor template rendering engine built on top of Microsoft's Razor template system and based on [RazorEngine](https://github.com/Antaris/RazorEngine) but designed to be very simple and lightweight with minimal dependencies.
+
+Ideal for non-MVC environments where you just want to render a Razor template without any fuss.
 
 ##Dependencies
 * Runs under .NET 4.0/4.5 or Mono
