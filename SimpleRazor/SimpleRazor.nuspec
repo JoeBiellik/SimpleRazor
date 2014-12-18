@@ -1,30 +1,32 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<id>$id$</id>
-		<version>$version$</version>
-		<title>$title$</title>
-		<authors>$author$</authors>
-		<owners>$author$</owners>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<summary>$description$</summary>
-		<description>$description$</description>
-		<releaseNotes>Initial release.</releaseNotes>
-		<copyright>Copyright $author$ 2014</copyright>
+		<id>SimpleRazor</id>
+		<title>SimpleRazor</title>
+		<version>0.0.0.0</version>
+		<authors>Joe Biellik</authors>
+		<summary>Simple Razor template engine</summary>
+		<description>Simple Razor template engine</description>
 		<tags>razor template</tags>
+		<licenseUrl>http://www.opensource.org/licenses/MIT</licenseUrl>
+		<projectUrl>https://github.com/JoeBiellik/SimpleRazor</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<dependencies>
 			<group targetFramework="net40">
-				<dependency id="Microsoft.AspNet.Razor" />
+				<dependency id="Microsoft.AspNet.Razor" version="2.0.0" />
 			</group>
 			<group targetFramework="net45">
-				<dependency id="Microsoft.AspNet.Razor" />
+				<dependency id="Microsoft.AspNet.Razor" version="3.0.0" />
 			</group>
 		</dependencies>
 	</metadata>
 	<files>
-        <file src="\bin\Release-Net40\$id$.dll" target="lib\net40\" />
-		<file src="\bin\Release-Net40\$id$.xml" target="lib\net40\" />
-        <file src="\bin\Release-Net45\$id$.dll" target="lib\net45\" />
-		<file src="\bin\Release-Net45\$id$.xml" target="lib\net45\" />
+        <file src="bin\Release\net40\SimpleRazor.dll" target="lib\net40\" />
+		<file src="bin\Release\net40\SimpleRazor.xml" target="lib\net40\" />
+		<file src="bin\Release\net40\SimpleRazor.pdb" target="lib\net40\" />
+        <file src="bin\Release\net45\SimpleRazor.dll" target="lib\net45\" />
+		<file src="bin\Release\net45\SimpleRazor.xml" target="lib\net45\" />
+		<file src="bin\Release\net45\SimpleRazor.pdb" target="lib\net45\" />
+		<file src="**\*.cs" target="src" />
     </files>
 </package>
